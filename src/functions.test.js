@@ -47,7 +47,10 @@ const sumOfArray = (arr) => {
  * and returns true if it is a vowel, false otherwise.
  */
 
-// ...
+const vowels = 'aeiouAEIOU';
+const isVowel = (character) => {
+  return vowels.includes(character);
+}
 
  /**
   * Write a function rovarspraket() that will translate
