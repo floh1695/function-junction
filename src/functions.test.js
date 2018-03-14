@@ -34,7 +34,13 @@ const sum = (x, y) => {
  * all the numbers in an array.
  */
 
-// ...
+const sumOfArray = (arr) => {
+  let s = 0;
+  arr.forEach((element) => {
+    s += element;
+  });
+  return s;
+}
 
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
