@@ -28,20 +28,25 @@ const isIt = (isItThis) => {
   return isItF;
 }
 
-const vowels = 'aeiouAEIOU';
-const isVowel = isIt(vowels);
+const isVowel = isIt('aeiouAEIOU');
+const isDigit = isIt('0123456789');
 
- /**
-  * Write a function rovarspraket() that will translate
-  * a text into a "rövarspråket". That is, double every
-  * consonant and place an occurrence of "o" in between.
-  *
-  * For example, rovarspraket("this is fun") should
-  * return the string "tothohisos isos fofunon".
-  */
+const isConsonant = (s) => {
+  return !isVowel(s) && !isDigit(s)
+}
 
-const rovarspraket = (s) => {
-  console.log('not yet implimented');
+const rovarspraket = (input) => {
+  input = input + '';
+  let newString = '';
+  input.split('').forEach((s) => {
+    if (isConsonant(s)) {
+      newString += s + 'o' + s;
+    }
+    else {
+      newString += s;
+    }
+  });
+  return newString;
 }
 
 /**
