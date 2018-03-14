@@ -36,7 +36,7 @@ const isConsonant = (s) => {
 }
 
 const rovarspraket = (input) => {
-  input = input + '';
+  input = string(input);
   let newString = '';
   input.split('').forEach((s) => {
     if (isConsonant(s)) {
@@ -49,12 +49,6 @@ const rovarspraket = (input) => {
   return newString;
 }
 
-/**
- * Define a function reverse() that computes
- * the reversal of a string. For example,
- * reverse("skoob") should return the
- * string "books".
- */
 const reverse = (input) => {
   let newString = '';
   for (let i = 0; i < input.length; ) {
