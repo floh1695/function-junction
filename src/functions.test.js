@@ -16,7 +16,9 @@ const max = (x, y) => {
  * numbers as arguments and returns the largest of them.
  */
 
-// ...
+const maxOfThree = (x, y, z) => {
+  return max(max(x, y), z);
+}
 
 /*
  * Define a function sum() that takes two numbers as
