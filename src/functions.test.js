@@ -25,7 +25,9 @@ const maxOfThree = (x, y, z) => {
  * arguments and computes the sum of those two numbers.
  */
 
-// ...
+const sum = (x, y) => {
+  return x + y;
+}
 
 /*
  * Define a function sumOfArray that calculates the sum of
