@@ -61,7 +61,9 @@ const isVowel = (character) => {
   * return the string "tothohisos isos fofunon".
   */
 
-// ...
+const rovarspraket = (s) => {
+  console.log('not yet implimented');
+}
 
 /**
  * Define a function reverse() that computes
