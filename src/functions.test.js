@@ -36,7 +36,7 @@ const isConsonant = (s) => {
 }
 
 const rovarspraket = (input) => {
-  input = string(input);
+  input = String(input);
   let newString = '';
   input.split('').forEach((s) => {
     if (isConsonant(s)) {
@@ -51,20 +51,21 @@ const rovarspraket = (input) => {
 
 const reverse = (input) => {
   let newString = '';
-  for (let i = 0; i < input.length; ) {
+  for (let i = 0; i < input.length; i++) {
     newString = input[i] + newString;
   }
   return newString;
 }
 
- /**
-  * Write a function findLongestWord() that takes an
-  * string returns the first, longest word in the array.
-  *
-  * i.e. findLongestWord("book dogs") should return "book"
-  */
-
-// ...
+const findLongestWord = (input) => {
+  let longest = '';
+  input.split(' ').forEach((s) => {
+    if (s.length > longest.length) {
+      longest = s;
+    }
+  });
+  return longest;
+}
 
 /**
  * NOTE: Don't modify anything below this line...
@@ -127,7 +128,7 @@ test('reverse()', (t) => {
 
 test('findLongestWord()', (t) => {
   t.is(findLongestWord('book dogs'), 'book')
-  t.is(findLongestWord('everything'), 'life the universe and everything')
+  t.is(findLongestWord('life the universe and everything'), 'everything')
 })
 
 /* eslint-enable */
