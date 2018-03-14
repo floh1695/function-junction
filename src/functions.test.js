@@ -21,10 +21,15 @@ const sumOfArray = (arr) => {
   return s;
 }
 
-const vowels = 'aeiouAEIOU';
-const isVowel = (character) => {
-  return vowels.includes(character);
+const isIt = (isItThis) => {
+  const isItF = (s) => {
+    return isItThis.includes(s);
+  }
+  return isItF;
 }
+
+const vowels = 'aeiouAEIOU';
+const isVowel = isIt(vowels);
 
  /**
   * Write a function rovarspraket() that will translate
