@@ -55,8 +55,13 @@ const rovarspraket = (input) => {
  * reverse("skoob") should return the
  * string "books".
  */
-
-// ...
+const reverse = (input) => {
+  let newString = '';
+  for (let i = 0; i < input.length; ) {
+    newString = input[i] + newString;
+  }
+  return newString;
+}
 
  /**
   * Write a function findLongestWord() that takes an
