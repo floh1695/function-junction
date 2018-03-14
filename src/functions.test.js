@@ -4,7 +4,12 @@
  * construct available in Javascript.
  */
 
-// ...
+const max = (x, y) => {
+  if (x > y) {
+    return x;
+  }
+  return y;
+}
 
 /**
  * Define a function maxOfThree() that takes three
