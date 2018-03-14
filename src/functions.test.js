@@ -1,9 +1,3 @@
-/**
- * Define a function max() that takes two numbers as arguments
- * and returns the largest of them. Use the if-then-else
- * construct available in Javascript.
- */
-
 const max = (x, y) => {
   if (x > y) {
     return x;
@@ -11,28 +5,13 @@ const max = (x, y) => {
   return y;
 }
 
-/**
- * Define a function maxOfThree() that takes three
- * numbers as arguments and returns the largest of them.
- */
-
 const maxOfThree = (x, y, z) => {
   return max(max(x, y), z);
 }
 
-/*
- * Define a function sum() that takes two numbers as
- * arguments and computes the sum of those two numbers.
- */
-
 const sum = (x, y) => {
   return x + y;
 }
-
-/*
- * Define a function sumOfArray that calculates the sum of
- * all the numbers in an array.
- */
 
 const sumOfArray = (arr) => {
   let s = 0;
@@ -41,11 +20,6 @@ const sumOfArray = (arr) => {
   });
   return s;
 }
-
-/**
- * Write a function isVowel() that takes a character (i.e. a string of length 1)
- * and returns true if it is a vowel, false otherwise.
- */
 
 const vowels = 'aeiouAEIOU';
 const isVowel = (character) => {
